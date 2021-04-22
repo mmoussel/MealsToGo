@@ -6,7 +6,7 @@ import styled from "styled-components/native";
 import { Text } from "../../../components/typography/text.component";
 
 export const AccountBackground = styled(ImageBackground).attrs({
-  source: require("../../../back.jpg"),
+  source: require("../../../../assets/back.jpg"),
 })`
   flex: 1;
   align-items: center;

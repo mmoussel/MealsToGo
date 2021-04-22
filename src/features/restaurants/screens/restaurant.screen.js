@@ -9,6 +9,7 @@ import { RestaurantContext } from "../../../services/restaurants/restaurants.con
 import { Search } from "../components/search.components";
 import { FavouritesBar } from "../../../components/favourites/favourites.bar.component";
 import { FavouritesContext } from "../../../services/favourites/favouritet.context";
+import { FadeView } from "../../../components/animation/animation.component";
 
 const RestaurantsList = styled(FlatList).attrs({
   contentContainerStyle: {
@@ -50,19 +51,24 @@ export const RestaurantsScreen = ({ navigation }) => {
             onNavigate={navigation.navigate}
           />
         )}
+
         <RestaurantsList
           data={restaurants}
           renderItem={({ item }) => {
             return (
               <TouchableOpacity
                 onPress={() =>
-                  navigation.navigate("RestaurantsDetail", { restaurant: item })
+                  navigation.navigate("RestaurantsDetail", {
+                    restaurant: item,
+                  })
                 }
               >
-                <RestaurantsInfoCard
-                  restaurant={item}
-                  onNavigate={navigation.navigate}
-                />
+                <FadeView>
+                  <RestaurantsInfoCard
+                    restaurant={item}
+                    onNavigate={navigation.navigate}
+                  />
+                </FadeView>
               </TouchableOpacity>
             );
           }}

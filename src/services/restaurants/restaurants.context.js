@@ -1,5 +1,4 @@
-import React, { createContext, useMemo, useEffect, useState } from "react";
-import { useContext } from "react/cjs/react.development";
+import React, { createContext, useEffect, useState, useContext } from "react";
 import { restaurantsRequest, restaurantTransform } from "./restaurants.service";
 import { LocationContext } from "../location/location.context";
 
@@ -9,7 +8,6 @@ export const RestaurantContextProvider = ({ children }) => {
   const [restaurants, setRestaurants] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
-
   const { location } = useContext(LocationContext);
 
   const retriveRestaurants = (loc) => {

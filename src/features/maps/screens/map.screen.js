@@ -1,11 +1,9 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import { useState } from "react";
 import MapView from "react-native-maps";
-import { useContext, useEffect } from "react/cjs/react.development";
 import styled from "styled-components/native";
 import { LocationContext } from "../../../services/location/location.context";
 import { RestaurantContext } from "../../../services/restaurants/restaurants.context";
-import { RestaurantsInfoCard } from "../../restaurants/components/restaurant-info-card.component";
 import { MapCallout } from "../componemts/map.callout";
 import { Search } from "../componemts/search.components";
 

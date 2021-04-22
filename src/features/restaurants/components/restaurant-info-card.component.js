@@ -16,10 +16,9 @@ import {
   ResCardCover,
 } from "./restaurant-info-card-style";
 import { Favourite } from "../../../components/favourites/favourites.component";
-import { Entypo } from "@expo/vector-icons";
-import styled from "styled-components";
+import { FadeView } from "../../../components/animation/animation.component";
 
-export const RestaurantsInfoCard = ({ restaurant = {}, onNavigate }) => {
+export const RestaurantsInfoCard = ({ restaurant = {} }) => {
   const {
     name = "Some Restautant",
     icon = "https://visitskye.scot/images/restaurants-icon-larger_2x.png?crc=366233570",
@@ -33,25 +32,11 @@ export const RestaurantsInfoCard = ({ restaurant = {}, onNavigate }) => {
     ID,
   } = restaurant;
 
-  const LocatButton = styled(TouchableOpacity)`
-  position: absolute;
-  z-index: 9;
-  top :20px
-  left : 20px
-`;
-
   const ratingArray = Array.from(new Array(Math.floor(rating)));
   return (
     <>
       <RestaurantsCard>
         <Favourite restaurant={restaurant} />
-        <LocatButton
-          onPress={() => {
-            onNavigate("Map");
-          }}
-        >
-          <Entypo name="location" size={24} color="tomato" />
-        </LocatButton>
         <ResCardCover source={{ uri: photos[0] }} />
         <Info>
           <Text variant={"label"}>{name}</Text>

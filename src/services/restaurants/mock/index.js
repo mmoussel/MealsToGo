@@ -11,11 +11,11 @@ export const mocks = {
 };
 
 export const mockImages = [
-  "https://www.foodiesfeed.com/wp-content/uploads/2019/06/top-view-for-box-of-2-burgers-home-made-600x899.jpg",
-  "https://www.foodiesfeed.com/wp-content/uploads/2019/04/mae-mu-oranges-ice-600x750.jpg",
-  "https://www.foodiesfeed.com/wp-content/uploads/2020/08/detail-of-pavlova-strawberry-piece-of-cake-600x800.jpg",
-  "https://www.foodiesfeed.com/wp-content/uploads/2019/04/mae-mu-baking-600x750.jpg",
-  "https://www.foodiesfeed.com/wp-content/uploads/2019/04/mae-mu-pancakes-600x750.jpg",
-  "https://www.foodiesfeed.com/wp-content/uploads/2019/02/messy-pizza-on-a-black-table-600x400.jpg",
-  "https://www.foodiesfeed.com/wp-content/uploads/2019/02/pizza-ready-for-baking-600x400.jpg",
+  "https://assets.cairo360.com/app/uploads/2019/03/RCCAIRO_00046-875x323.jpg",
+  "https://www.cairowestmag.com/wp-content/uploads/2020/09/5-Restaurants-web10.png",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Barbieri_-_ViaSophia25668.jpg/1200px-Barbieri_-_ViaSophia25668.jpg",
+  "https://miro.medium.com/max/11192/0*dkW9pVK3_mZ4mEKG",
+  "https://static.onecms.io/wp-content/uploads/sites/9/2020/04/24/ppp-why-wont-anyone-rescue-restaurants-FT-BLOG0420.jpg",
+  "https://c.ndtvimg.com/2020-01/hqocblio_restaurant-_625x300_14_January_20.jpg",
+  "https://cdn.lifestyleasia.com/wp-content/uploads/2019/12/04175513/SAZ-The-American-Brasserie.jpg",
 ];
